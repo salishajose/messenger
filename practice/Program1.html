@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript practices</title>
+</head>
+<body>
+    <label for="Input">Ener Name</label>
+    <input type="text" id="nameValue">
+    <button onclick="show()">Submit</button>
+    <p id="inputText"></p>
+    <script>
+        function show(){
+            var input=document.getElementById('nameValue').value;
+            document.getElementById('inputText').innerHTML=input;
+            window.alert("message print")
+        }
+    </script>
+</body>
+</html>
